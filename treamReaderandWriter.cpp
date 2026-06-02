@@ -27,3 +27,16 @@ int main()
         // menulis dan memasukkan nilai dari variabel baris kedalam file
         outfile << baris << endl;
     }
+
+     // menutup file setelah penulisan selesai
+    outfile.close();
+
+    // membuka file dalam mode baca
+    ifstream infile;
+    // menunjukan ke sebuah file
+    infile.open("contohfile.txt");
+
+    cout << endl
+         << ">= membuka dan membaca file " << endl;
+    // kondisi jika file ada
+    if (infile.is_open())
